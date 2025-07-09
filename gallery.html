@@ -1,0 +1,101 @@
+<!-- gallery.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Universe Gallery</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="stories.html">Stories</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+  <audio id="bg-music" autoplay loop>
+    <source src="assets/calm-space-music-312291.mp3" type="audio/mpeg" />
+  </audio>
+
+  <div id="music-control">
+    <button id="toggle-music" title="Toggle Music">🔊</button>
+    <div class="volume-container">
+      <input type="range" id="volume-slider" min="0" max="1" step="0.01" value="1" />
+    </div>
+  </div>
+
+  <h1 class="gallery-heading">🌌 Gallery</h1>
+
+  <div class="gallery-container">
+    <div class="gallery-item">
+      <img src="image (1).png" alt="Galaxy" data-title="Spiral Galaxy" data-description="A luminous spiral galaxy spinning in deep space, with bright white light at its center. Dust lanes and star trails spiral outward in glowing pinks and blues. Possibly representing the Milky Way or a newly forming galaxy.
+
+      " />
+      <p>Spiral Galaxy</p>
+    </div>
+    <div class="gallery-item">
+      <img src="image (2).png" alt="Nebula" data-title="Ringed Planet & Moons" data-description="A massive ringed planet with several moons orbiting it, set against a vivid galactic background. The planet may be a gas giant like Saturn or a fictional exoplanet. The glowing rings and background galaxy create a dramatic contrast." />
+      <p>Ringed Planet & Moons</p>
+    </div>
+    <div class="gallery-item">
+      <img src="image (3).png" alt="Planet" data-title=" Galactic Collision" data-description=" Two galaxies merge in a brilliant cosmic explosion. Bright arcs of energy, pink starbursts, and dust trails suggest a galactic collision — a rare and powerful event that reshapes galaxies and births stars." />
+      <p> Galactic Collision</p>
+    </div>
+    <div class="gallery-item">
+        <img src="image (8).png" alt="Galaxy" data-title="Solar Storm on Red Sta" data-description="A fiery red star radiates intense solar flares and magnetic loops. This may represent a red dwarf or a highly active sun-like star caught in a magnetic storm. The arcs show strong plasma activity and energy release" />
+        <p>Solar Storm on Red Sta</p>
+      </div>
+      <div class="gallery-item">
+        <img src="image (10).png" alt="Nebula" data-title="Multiverse Explosion" data-description="A brilliant energy burst at the center of countless spiraling galaxies. This symbolizes the origin of the multiverse — a place where infinite realities collide, each galaxy a universe of its own. A cosmic gateway between dimensions." />
+        <p>Multiverse Explosion</p>
+      </div>
+      <div class="gallery-item">
+        <img src="image (6).png" alt="Planet" data-title="Future Space City" data-description="A massive futuristic city orbiting close to a giant star. Towers rise into space, surrounded by docking ports and flying spacecraft. This is a thriving space civilization, where humans or aliens harness stellar energy to fuel progress" />
+        <p>Future Space City</p>
+      </div>
+      <div class="gallery-item">
+        <img src="image (11).png" alt="Nebula" data-title="Deep Space Probe" data-description="A lone satellite travels between icy planets, gathering data in the outer reaches of a solar system. Representing human curiosity, this probe marks the edge of known space — a silent explorer of the unknown" />
+        <p> Deep Space Probe</p>
+      </div>
+      <div class="gallery-item">
+        <img src="image (4).png" alt="Planet" data-title="Ship Near Black Hole" data-description="A sleek spacecraft approaches a massive black hole, swirling with pink and white energy. Time bends, light warps, and the ship risks being pulled into oblivion. A stunning vision of gravitational power and cosmic danger." />
+        <p>Ship Near Black Hole</p>
+      </div>
+      <div class="gallery-item">
+        <img src="assets/Generated Image July 09, 2025 - 4_59PM.jpeg" alt="Planet" data-title="Space Station & Black Hole" data-description="A sleek ring-shaped space station orbits the edge of a black hole. Gravitational waves bend light around the void — a perfect balance between progress and oblivion.
+
+        " />
+        <p>Space Station & Black Hole</p>
+      </div>
+      <div class="gallery-item">
+        <img src="assets/90.jpeg" alt="Nebula" data-title="Time Rift in Deep Space" data-description="A mysterious rip in space-time warps the stars around it. A lone ship stares into the unknown, witnessing the fragile edge between reality and something beyond understanding." />
+        <p>Time Rift in Deep Space</p>
+      </div>
+      <div class="gallery-item">
+        <img src="assets/Generated Image July 09, 2025 - 4_59PM (1).jpeg" alt="Planet" data-title="Birth of a New Galaxy" data-description="Witness the universe in creation. Cosmic gas clouds swirl, stars ignite, and light explodes across the void — a newborn galaxy rises from the silence of space." />
+        <p>Birth of a New Galaxy</p>
+      </div>
+      <div class="gallery-item">
+        <img src="assets/100.jpeg" alt="Planet" data-title="Alien City on a Floating Plane" data-description=" A breathtaking alien city floats above a gas giant. Hovering islands hold glowing towers connected by skybridges, surrounded by drifting moons and glowing atmospheres. A vision of advanced alien engineering" />
+        <p>Alien City on a Floating Plane</p>
+      </div>
+  </div>
+
+  <div id="lightbox" class="lightbox">
+    <span class="close" onclick="closeLightbox()">&times;</span>
+    <img id="lightbox-img" />
+    <div id="image-info" class="image-info">
+      <h2 id="info-title"></h2>
+      <p id="info-description"></p>
+    </div>
+    <button class="nav-btn left" onclick="prevImage()">⬅️</button>
+    <button class="nav-btn right" onclick="nextImage()">➡️</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
